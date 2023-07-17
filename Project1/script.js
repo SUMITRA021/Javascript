@@ -94,3 +94,56 @@ console.log(agee); // >, <, >=, <=
 console.log(ageDawn >= 23);
 
 //Precedence of Operator
+
+//Strings
+
+const firstNamee = "sumitra";
+const jobb = "software engineer";
+const birthYearr = 1996;
+const yearr = 2023;
+
+const sumitra =
+  "I'm" +
+  " " +
+  firstNamee +
+  ", a" +
+  " " +
+  (yearr - birthYearr) +
+  " " +
+  "years old" +
+  " " +
+  jobb +
+  "!";
+
+console.log(sumitra);
+
+//Template string of ES6
+
+const sum = `I'm ${firstNamee}, a ${yearr - birthYearr} years old ${jobb}!`;
+console.log(sum);
+
+//backticks
+console.log(`Sumitra Dawn`);
+
+console.log(
+  "String \n\
+ sbdhh"
+);
+
+console.log(`string
+multiple
+lines`);
+
+//Decision Making -IF else
+
+const ageee = 15;
+//const isOldEnough = ageee >= 18;
+
+if (ageee >= 18 == true) {
+  console.log(`Ratul can drive 🚗`);
+} else {
+  const yearLeft = 18 - ageee;
+  console.log(
+    `Ratul Can not drive, too young to drive ${yearLeft} years left to start`
+  );
+}
