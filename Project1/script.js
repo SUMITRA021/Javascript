@@ -147,3 +147,36 @@ if (ageee >= 18 == true) {
     `Ratul Can not drive, too young to drive ${yearLeft} years left to start`
   );
 }
+
+//Type Conversion
+//Explicity convert from one type to another
+
+const inputYear = "1996";
+console.log(Number(inputYear));
+console.log(inputYear + 18);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jonas"));
+console.log(typeof NaN);
+
+console.log(String(23), 23); //Number shows in blue colour and string shows in white colour.
+
+//Type Coercion
+
+console.log("I am" + " " + 23 + " " + "years old"); //converted to string
+console.log("I am" + " " + "23" + " " + "years old");
+
+console.log("23" - "10" - "3"); // converted to number
+
+console.log("23" + "10" + "3"); // converted to string and concatenate
+
+console.log("23" * "2"); // converted to number
+
+console.log("23" / "2"); // converted to number
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+
+console.log(2 + 3 + 4 + "5");
+console.log("10" - "4" - "3" - "2" + "5");
