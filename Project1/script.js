@@ -180,3 +180,46 @@ console.log(n);
 
 console.log(2 + 3 + 4 + "5");
 console.log("10" - "4" - "3" - "2" + "5");
+
+//Falsy and Truthy Values
+//Falsy values - 0,' ' ,undefined , null , NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("jonas")); //string with value
+console.log(Boolean({})); //empty object
+console.log(Boolean("")); //empty string
+console.log(Boolean(NaN));
+
+const money = 0;
+if (money) {
+  console.log("Don't spent money");
+} else {
+  console.log("get a job");
+}
+
+let height;
+if (height) {
+  ///if height is true this block will execute
+  console.log("height is defined");
+} else {
+  console.log("not defined");
+}
+
+let height1 = 100;
+if (height1) {
+  ///if height is true this block will execute
+  console.log("height is defined");
+} else {
+  console.log("not defined");
+}
+
+//Problem with the code is that even though it is defined with 0 it is showing undefined as '0' is undefined but this might be a prblm.
+
+let height3 = 0;
+if (height3) {
+  ///if height is true this block will execute
+  console.log("height is defined");
+} else {
+  console.log("not defined");
+}
