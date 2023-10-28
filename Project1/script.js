@@ -46,7 +46,7 @@ let year;
 console.log(year);
 console.log(typeof year);
 
-console.log(typeof null); //error in javascript and never removed sue to legacy issues. return object.
+console.log(typeof null); //error in javascript and never removed due to legacy issues. return object.
 
 //Declare variable
 
@@ -223,3 +223,54 @@ if (height3) {
 } else {
   console.log("not defined");
 }
+
+//Equality Operator
+// const ageeee = 18;
+// if (ageeee === 18) console.log("adult");
+
+// if (ageeee == 18) console.log("adultt");
+
+// const favr = Number(prompt("what is your fav number?"));
+// console.log(favr);
+// console.log(typeof favr);
+
+// if (favr === 23) console.log("23 here!");
+
+//Logical
+
+const DL = true; //A
+const GV = false; //B
+
+console.log(DL && GV);
+
+console.log(DL || GV);
+
+console.log(!DL);
+
+// wheaher sara should drive or not
+
+const ShouldDrive = DL && GV;
+
+if (ShouldDrive) {
+  console.log("Can drive");
+} else {
+  console.log("Can't drive");
+}
+
+//Switch
+
+const day = "monday";
+
+switch (day) {
+  case "monday": //day === 'monday'
+    console.log("xyz monday");
+    break;
+  case "tuesday":
+    console.log("tuesday");
+    break;
+}
+
+//statement and expression
+
+const me = "sumitra";
+console.log(`The addition of 2 and 3 is ${2 + 3} -- ${me}`);
