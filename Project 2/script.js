@@ -56,3 +56,19 @@ function fruitProcessor(apples, organges) {
 }
 
 console.log(fruitProcessor(2, 3));
+
+//Array
+
+const friend = ["archi", "snig", "subh", "mani"];
+console.log(friend[0]);
+
+const yr = new Array(1, 2, 2, 1, 2);
+let i;
+for (i = 0; i < friend.length; i++) {
+  console.log(friend[i]);
+}
+
+const Me = ["Sumitra", "Dawn", 27, "Blue"];
+for (i = 0; i < Me.length; i++) {
+  console.log(Me[i]);
+}
