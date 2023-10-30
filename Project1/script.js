@@ -274,3 +274,8 @@ switch (day) {
 
 const me = "sumitra";
 console.log(`The addition of 2 and 3 is ${2 + 3} -- ${me}`);
+
+//Ternary operator
+
+const bois = 23;
+bois >= 18 ? console.log("can drive") : console.log("can't drive");
