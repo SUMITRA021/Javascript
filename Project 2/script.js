@@ -72,3 +72,30 @@ const Me = ["Sumitra", "Dawn", 27, "Blue"];
 for (i = 0; i < Me.length; i++) {
   console.log(Me[i]);
 }
+
+// basic array methods
+
+//add element
+
+const frr = ["a", "b", "c"];
+frr.push("d"); //add at end
+console.log(frr);
+
+frr.unshift("S"); //add start
+console.log(frr);
+
+//remove element
+
+frr.pop(); //remove last element
+console.log(frr);
+
+frr.shift(); //Remove first
+console.log(frr);
+
+console.log(frr.indexOf("c"));
+
+console.log(frr.indexOf("d")); //return -1 if element is not there in the list
+
+console.log(frr.includes("a")); //use strict rule  -- check if element is there or not
+
+console.log(frr.includes("d"));
