@@ -99,3 +99,51 @@ console.log(frr.indexOf("d")); //return -1 if element is not there in the list
 console.log(frr.includes("a")); //use strict rule  -- check if element is there or not
 
 console.log(frr.includes("d"));
+
+//Array Objects - represnts key value pair
+
+const sumi = {
+  firstname: "Sumitra",
+  lastname: "Dawn",
+  Age: 27,
+  Occupation: "Software Developer",
+  Friends: ["a", "b", "c"],
+};
+
+//Retrieve data from object
+
+console.log(sumi);
+console.log(sumi.lastname); //dot operator
+console.log(sumi["lastname"]); //bracket operator
+
+const namekey = "name";
+console.log(sumi["first" + namekey]);
+console.log(sumi["last" + namekey]);
+
+//console.log(sumi.'last'+namekey) --- give error in case of dot only bracket will help in this case.
+
+const interestedIn = prompt(
+  "what do you want to know about jonas? choose  between firstname,lastname,age,job and friends"
+);
+
+console.log(sumi.interestedIn);
+
+if (sumi[interestedIn]) console.log(sumi[interestedIn]);
+else
+  console.log(
+    "wrong request! choose  between firstname,lastname,age,job and friends"
+  );
+
+// How to use dot and bracket to add new member to object
+
+sumi.location = "Asansol";
+sumi["gmail"] = "sumi@gmailcom";
+console.log(sumi);
+
+//challenge
+
+//'sumi has 3 friends, and her best friend is called a
+
+console.log(
+  `${sumi.firstname} has ${sumi.Friends.length} friends, and her best friend is called ${sumi.Friends[0]} `
+);
