@@ -74,6 +74,7 @@ for (i = 0; i < Me.length; i++) {
 }
 
 // basic array methods
+//array are special kind of objects
 
 //add element
 
@@ -122,17 +123,17 @@ console.log(sumi["last" + namekey]);
 
 //console.log(sumi.'last'+namekey) --- give error in case of dot only bracket will help in this case.
 
-const interestedIn = prompt(
-  "what do you want to know about jonas? choose  between firstname,lastname,age,job and friends"
-);
+// const interestedIn = prompt(
+//   "what do you want to know about jonas? choose  between firstname,lastname,age,job and friends"
+// );
 
-console.log(sumi.interestedIn);
+// console.log(sumi.interestedIn);
 
-if (sumi[interestedIn]) console.log(sumi[interestedIn]);
-else
-  console.log(
-    "wrong request! choose  between firstname,lastname,age,job and friends"
-  );
+// if (sumi[interestedIn]) console.log(sumi[interestedIn]);
+// else
+//   console.log(
+//     "wrong request! choose  between firstname,lastname,age,job and friends"
+//   );
 
 // How to use dot and bracket to add new member to object
 
@@ -147,3 +148,41 @@ console.log(sumi);
 console.log(
   `${sumi.firstname} has ${sumi.Friends.length} friends, and her best friend is called ${sumi.Friends[0]} `
 );
+
+//Object Methods
+
+const sumitra = {
+  firstname: "Sumitra",
+  lastname: "Dawn",
+  Saal: 1996,
+  Occupation: "Software Developer",
+  Friends: ["a", "b", "c"],
+  hasDriverLicence: true,
+  // calAge: function (Age) {
+  //   //Any function attached to some object called method.
+  //   return 2023 - Age;
+  // },
+
+  calAge: function () {
+    //console.log(this);
+    this.Age = 2023 - this.Saal;
+    return this.Age;
+  },
+
+  getSummery: function () {
+    return `${this.firstname} is a ${this.calAge()} years old ${
+      this.Occupation
+    }, and he has a ${this.hasDriverLicence ? "licence" : "no licence"}`;
+  },
+};
+
+console.log(sumitra.calAge());
+
+// console.log(sumitra["calAge"](1996));
+
+//challenge
+//"jonas is a 46 year teacher and he has a driver licence"
+
+console.log(sumitra.getSummery());
+
+//Loop
