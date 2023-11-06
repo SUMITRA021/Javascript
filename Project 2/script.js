@@ -186,3 +186,34 @@ console.log(sumitra.calAge());
 console.log(sumitra.getSummery());
 
 //Loop
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`lifting weights repetition ${rep}  🏋️`);
+}
+
+const sumitr = ["Sumitra", "Dawn", 1996, "Software Developer", ["a", "b", "c"]];
+
+const types = [];
+
+for (let i = 0; i < 5; i++) {
+  console.log(sumitr[i], typeof sumitr[i]);
+
+  //filling an array
+  //types[i] = typeof sumitr[i];
+  types.push(typeof sumitr[i]);
+}
+console.log(types);
+
+//continue and break
+console.log("------------------Only print string value---------------");
+for (let i = 0; i < 5; i++) {
+  if (typeof sumitr[i] !== "string") continue;
+  else console.log(sumitr[i], typeof sumitr[i]);
+}
+
+console.log("------------------stop after number found---------------");
+
+for (let i = 0; i < 5; i++) {
+  if (typeof sumitr[i] === "number") break;
+  else console.log(sumitr[i], typeof sumitr[i]);
+}
