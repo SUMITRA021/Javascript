@@ -217,3 +217,25 @@ for (let i = 0; i < 5; i++) {
   if (typeof sumitr[i] === "number") break;
   else console.log(sumitr[i], typeof sumitr[i]);
 }
+
+//Backward looping🏋️
+console.log("---------------Backward print---------------");
+for (let i = sumitr.length - 1; i >= 0; i--) {
+  console.log(i, sumitr[i]);
+}
+
+//while loop
+let rep = 1;
+while (rep <= 10) {
+  console.log(`lift ${rep} 🏋️`);
+  rep++;
+}
+
+//Roll a dice until we got 6
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`you roll ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+}
